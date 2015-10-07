@@ -1,0 +1,65 @@
+#! /bin/busybox ash
+/bin/busybox echo "Entered initramfs" > /dev/tty0
+#/bin/busybox sleep 10
+/bin/busybox mount -t devtmpfs devtmpfs /dev
+/bin/busybox mount -t sysfs sysfs /sys
+/bin/busybox mount -t proc proc /proc
+/bin/busybox echo "Devtmpfs mounted" > /dev/tty0
+
+/bin/busybox mdev -s
+/bin/busybox echo "Device populated" > /dev/tty0
+
+/bin/busybox echo 0 > /sys/class/android_usb/android0/bDeviceClass
+/bin/busybox echo 0 > /sys/class/android_usb/android0/bDeviceSubClass
+/bin/busybox echo 0 > /sys/class/android_usb/android0/bDeviceProtocol
+/bin/busybox echo AOSC > /sys/class/android_usb/android0/f_rndis/manufacturer
+/bin/busybox echo 1f3a > /sys/class/android_usb/android0/f_rndis/vendorID
+/bin/busybox echo 1 > /sys/class/android_usb/android0/f_rndis/wceis
+/bin/busybox echo 03381846b85500000000 > /sys/class/android_usb/android0/iSerial
+/bin/busybox echo AOSC > /sys/class/android_usb/android0/iManufacturer
+/bin/busybox echo A3301 > /sys/class/android_usb/android0/iProduct
+
+/bin/busybox echo 0 > /sys/class/android_usb/android0/enable
+/bin/busybox echo 1f3a > /sys/class/android_usb/android0/idVendor
+/bin/busybox echo 1002 > /sys/class/android_usb/android0/idProduct
+/bin/busybox echo rndis > /sys/class/android_usb/android0/functions
+/bin/busybox echo 1 > /sys/class/android_usb/android0/enable
+/bin/busybox echo "Started RNDIS" > /dev/tty0
+
+/bin/busybox echo "Waiting for mmcblk0p2" > /dev/tty0
+while /bin/busybox [ ! -e /dev/mmcblk0p2 ]
+do
+/bin/busybox sleep 1
+/bin/busybox mdev -s
+done
+
+/bin/busybox mount /dev/mmcblk0p2 /aosc
+/bin/busybox echo "mmcblk0p2 mounted" > /dev/tty0
+
+/bin/busybox echo 0 > /sys/class/android_usb/android0/enable
+/bin/busybox echo 1f3a > /sys/class/android_usb/android0/idVendor
+/bin/busybox echo 1002 > /sys/class/android_usb/android0/idProduct
+/bin/busybox echo adb > /sys/class/android_usb/android0/functions
+/bin/busybox echo 1 > /sys/class/android_usb/android0/enable
+/bin/busybox echo "Started ADB, Waiting for SDBD" >/dev/tty0
+
+#/bin/busybox echo "ondemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+#/bin/busybox echo 368640 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+
+#/bin/busybox echo 0 > /proc/sys/kernel/hung_task_timeout_secs
+#/bin/busybox echo 0 > /proc/sys/kernel/printk
+
+# /bin/busybox chroot /aosc setterm --blank force > /dev/tty0
+# /bin/busybox chroot /aosc setterm --blank poke >/dev/tty0
+/bin/busybox echo 1000000 > /sys/class/power_supply/BAT0/chgintmicrocur
+/bin/busybox echo 1 > /sys/devices/virtual/disp/disp/attr/lcdbl
+# /bin/busybox echo 2 > /sys/class/graphics/fbcon/rotate_all
+
+/bin/busybox echo Workaround applied > /dev/tty0
+
+S=$(/bin/busybox tty)
+/bin/busybox echo $S > /dev/tty0
+
+exec /bin/busybox switch_root /aosc /sbin/init >/dev/tty0 2>&1 </dev/tty0
+/bin/busybox echo "FAILED!!!" >/dev/tty0
+/bin/busybox sleep 1000000

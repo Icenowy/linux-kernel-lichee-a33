@@ -1,0 +1,16 @@
+00001930  ad de 14 a7 42 4a ff ff  01 20 00 01 00 08 00 00  |....BJ... ......|
+00001940  88 31 00 00 80 03 28 00  05 00 00 00 04 07 04 00  |.1....(.........|
+00001950  00 00 00 00 98 21 00 00  00 00 00 00 23 00 01 00  |.....!......#...|
+00001960  00 00 00 00 ad d7 14 9e  34 4a ff ff 01 10 00 01  |........4J......|
+NandID:ad de 14 a7 42 4a ff ff
+DieCntPerChip:01
+SectCntPerPage:20
+PageCntPerBlk:00 01
+BlkCntPerDie:00 08
+OperationOpt:00 00 88 31
+ValidBlkRatio:00 00
+AccessFreq:80 03
+EccMode:28 00
+ReadRetryType:05 00 00 00
+
+

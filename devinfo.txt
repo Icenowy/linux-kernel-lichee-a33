@@ -1,0 +1,2436 @@
+P: /devices/platform/MBUS_PMU
+E: DEVPATH=/devices/platform/MBUS_PMU
+E: DRIVER=MBUS_PMU
+E: MODALIAS=platform:MBUS_PMU
+E: SUBSYSTEM=platform
+
+P: /devices/platform/MBUS_PMU/hwmon/mbus_pmu
+E: DEVPATH=/devices/platform/MBUS_PMU/hwmon/mbus_pmu
+E: SUBSYSTEM=hwmon
+
+P: /devices/platform/alarmtimer
+E: DEVPATH=/devices/platform/alarmtimer
+E: DRIVER=alarmtimer
+E: MODALIAS=platform:alarmtimer
+E: SUBSYSTEM=platform
+
+P: /devices/platform/arm-pmu.0
+E: DEVPATH=/devices/platform/arm-pmu.0
+E: MODALIAS=platform:arm-pmu
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp-pinctrl
+E: DEVPATH=/devices/platform/axp-pinctrl
+E: DRIVER=axp-pinctrl
+E: MODALIAS=platform:axp-pinctrl
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board
+E: DEVPATH=/devices/platform/axp22_board
+E: DRIVER=axp22_board
+E: MODALIAS=platform:axp22_board
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.0
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.0
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.0/regulator/regulator.1
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.0/regulator/regulator.1
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.1
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.1
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.1/regulator/regulator.2
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.1/regulator/regulator.2
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.10
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.10
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.10/regulator/regulator.11
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.10/regulator/regulator.11
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.11
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.11
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.11/regulator/regulator.12
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.11/regulator/regulator.12
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.12
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.12
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.12/regulator/regulator.13
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.12/regulator/regulator.13
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.13
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.13
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.13/regulator/regulator.14
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.13/regulator/regulator.14
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.14
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.14
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.14/regulator/regulator.15
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.14/regulator/regulator.15
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.15
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.15
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.15/regulator/regulator.16
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.15/regulator/regulator.16
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.16
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.16
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.16/regulator/regulator.17
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.16/regulator/regulator.17
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.17
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.17
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.17/regulator/regulator.18
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.17/regulator/regulator.18
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.18
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.18
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.18/regulator/regulator.19
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.18/regulator/regulator.19
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.19
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.19
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.19/regulator/regulator.20
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.19/regulator/regulator.20
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.2
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.2
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.2/regulator/regulator.3
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.2/regulator/regulator.3
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.3
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.3
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.3/regulator/regulator.4
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.3/regulator/regulator.4
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.4
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.4
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.4/regulator/regulator.5
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.4/regulator/regulator.5
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.5
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.5
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.5/regulator/regulator.6
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.5/regulator/regulator.6
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.6
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.6
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.6/regulator/regulator.7
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.6/regulator/regulator.7
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.7
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.7
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.7/regulator/regulator.8
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.7/regulator/regulator.8
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.8
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.8
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.8/regulator/regulator.9
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.8/regulator/regulator.9
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-regulator.9
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.9
+E: DRIVER=axp22-regulator
+E: MODALIAS=platform:axp22-regulator
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-regulator.9/regulator/regulator.10
+E: DEVPATH=/devices/platform/axp22_board/axp22-regulator.9/regulator/regulator.10
+E: SUBSYSTEM=regulator
+
+P: /devices/platform/axp22_board/axp22-supplyer.20
+E: DEVPATH=/devices/platform/axp22_board/axp22-supplyer.20
+E: DRIVER=axp22-supplyer
+E: MODALIAS=platform:axp22-supplyer
+E: SUBSYSTEM=platform
+
+P: /devices/platform/axp22_board/axp22-supplyer.20/input/input0
+E: DEVPATH=/devices/platform/axp22_board/axp22-supplyer.20/input/input0
+E: EV=7
+E: ID_FOR_SEAT=input-platform-axp22-supplyer_20
+E: ID_INPUT=1
+E: ID_INPUT_KEY=1
+E: ID_PATH=platform-axp22-supplyer.20
+E: ID_PATH_TAG=platform-axp22-supplyer_20
+E: KEY=100000 0 0 0
+E: MODALIAS=input:b0019v0001p0001e0100-e0,1,2,k74,ramlsfw
+E: NAME="axp22-supplyer"
+E: PHYS="m1kbd/input2"
+E: PRODUCT=19/1/1/100
+E: PROP=0
+E: REL=0
+E: SUBSYSTEM=input
+E: TAGS=:seat:
+E: USEC_INITIALIZED=75281
+
+P: /devices/platform/axp22_board/axp22-supplyer.20/input/input0/event0
+N: input/event0
+S: input/by-path/platform-axp22-supplyer.20-event
+E: DEVLINKS=/dev/input/by-path/platform-axp22-supplyer.20-event
+E: DEVNAME=/dev/input/event0
+E: DEVPATH=/devices/platform/axp22_board/axp22-supplyer.20/input/input0/event0
+E: ID_INPUT=1
+E: ID_INPUT_KEY=1
+E: ID_PATH=platform-axp22-supplyer.20
+E: ID_PATH_TAG=platform-axp22-supplyer_20
+E: MAJOR=13
+E: MINOR=64
+E: SUBSYSTEM=input
+E: USEC_INITIALIZED=75388
+
+P: /devices/platform/axp22_board/axp22-supplyer.20/power_supply/AC
+E: DEVPATH=/devices/platform/axp22_board/axp22-supplyer.20/power_supply/AC
+E: POWER_SUPPLY_CURRENT_NOW=0
+E: POWER_SUPPLY_MODEL_NAME=AC
+E: POWER_SUPPLY_NAME=AC
+E: POWER_SUPPLY_ONLINE=0
+E: POWER_SUPPLY_PRESENT=0
+E: POWER_SUPPLY_VOLTAGE_NOW=0
+E: SUBSYSTEM=power_supply
+
+P: /devices/platform/axp22_board/axp22-supplyer.20/power_supply/AC1
+E: DEVPATH=/devices/platform/axp22_board/axp22-supplyer.20/power_supply/AC1
+E: POWER_SUPPLY_CURRENT_NOW=0
+E: POWER_SUPPLY_MODEL_NAME=AC1
+E: POWER_SUPPLY_NAME=AC1
+E: POWER_SUPPLY_ONLINE=1
+E: POWER_SUPPLY_PRESENT=1
+E: POWER_SUPPLY_VOLTAGE_NOW=0
+E: SUBSYSTEM=power_supply
+
+P: /devices/platform/axp22_board/axp22-supplyer.20/power_supply/BAT0
+E: DEVPATH=/devices/platform/axp22_board/axp22-supplyer.20/power_supply/BAT0
+E: POWER_SUPPLY_CAPACITY=92
+E: POWER_SUPPLY_CURRENT_NOW=51000
+E: POWER_SUPPLY_ENERGY_FULL=6127
+E: POWER_SUPPLY_ENERGY_FULL_DESIGN=6127
+E: POWER_SUPPLY_ENERGY_NOW=5636
+E: POWER_SUPPLY_HEALTH=Good
+E: POWER_SUPPLY_MODEL_NAME=BAT0
+E: POWER_SUPPLY_NAME=BAT0
+E: POWER_SUPPLY_ONLINE=0
+E: POWER_SUPPLY_PRESENT=1
+E: POWER_SUPPLY_STATUS=Charging
+E: POWER_SUPPLY_TECHNOLOGY=LiFe
+E: POWER_SUPPLY_TEMP=300
+E: POWER_SUPPLY_VOLTAGE_MAX_DESIGN=4200000
+E: POWER_SUPPLY_VOLTAGE_MIN_DESIGN=3300
+E: POWER_SUPPLY_VOLTAGE_NOW=4013000
+E: SUBSYSTEM=power_supply
+
+P: /devices/platform/capture
+E: DEVPATH=/devices/platform/capture
+E: DRIVER=capture
+E: MODALIAS=platform:capture
+E: SUBSYSTEM=platform
+
+P: /devices/platform/disp
+E: DEVPATH=/devices/platform/disp
+E: DRIVER=disp
+E: MODALIAS=platform:disp
+E: SUBSYSTEM=platform
+
+P: /devices/platform/disp/graphics/fb0
+N: fb0
+E: DEVNAME=/dev/fb0
+E: DEVPATH=/devices/platform/disp/graphics/fb0
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=0
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=76474
+
+P: /devices/platform/disp/graphics/fb1
+N: fb1
+E: DEVNAME=/dev/fb1
+E: DEVPATH=/devices/platform/disp/graphics/fb1
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=1
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=76608
+
+P: /devices/platform/disp/graphics/fb2
+N: fb2
+E: DEVNAME=/dev/fb2
+E: DEVPATH=/devices/platform/disp/graphics/fb2
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=2
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=76734
+
+P: /devices/platform/disp/graphics/fb3
+N: fb3
+E: DEVNAME=/dev/fb3
+E: DEVPATH=/devices/platform/disp/graphics/fb3
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=3
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=76848
+
+P: /devices/platform/disp/graphics/fb4
+N: fb4
+E: DEVNAME=/dev/fb4
+E: DEVPATH=/devices/platform/disp/graphics/fb4
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=4
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=76953
+
+P: /devices/platform/disp/graphics/fb5
+N: fb5
+E: DEVNAME=/dev/fb5
+E: DEVPATH=/devices/platform/disp/graphics/fb5
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=5
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=77059
+
+P: /devices/platform/disp/graphics/fb6
+N: fb6
+E: DEVNAME=/dev/fb6
+E: DEVPATH=/devices/platform/disp/graphics/fb6
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=6
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=77148
+
+P: /devices/platform/disp/graphics/fb7
+N: fb7
+E: DEVNAME=/dev/fb7
+E: DEVPATH=/devices/platform/disp/graphics/fb7
+E: ID_FOR_SEAT=graphics-platform-disp
+E: ID_PATH=platform-disp
+E: ID_PATH_TAG=platform-disp
+E: MAJOR=29
+E: MINOR=7
+E: SUBSYSTEM=graphics
+E: TAGS=:master-of-seat:seat:
+E: USEC_INITIALIZED=77234
+
+P: /devices/platform/dummy_hcd
+E: DEVPATH=/devices/platform/dummy_hcd
+E: DRIVER=dummy_hcd
+E: MODALIAS=platform:dummy_hcd
+E: SUBSYSTEM=platform
+
+P: /devices/platform/dummy_hcd/usb1
+N: bus/usb/001/001
+E: BUSNUM=001
+E: DEVNAME=/dev/bus/usb/001/001
+E: DEVNUM=001
+E: DEVPATH=/devices/platform/dummy_hcd/usb1
+E: DEVTYPE=usb_device
+E: DRIVER=usb
+E: MAJOR=189
+E: MINOR=0
+E: PRODUCT=1d6b/2/304
+E: SUBSYSTEM=usb
+E: TYPE=9/0/1
+
+P: /devices/platform/dummy_hcd/usb1/1-0:1.0
+E: DEVPATH=/devices/platform/dummy_hcd/usb1/1-0:1.0
+E: DEVTYPE=usb_interface
+E: DRIVER=hub
+E: ID_MODEL_FROM_DATABASE=2.0 root hub
+E: ID_USB_CLASS_FROM_DATABASE=Hub
+E: ID_USB_PROTOCOL_FROM_DATABASE=Single TT
+E: ID_VENDOR_FROM_DATABASE=Linux Foundation
+E: INTERFACE=9/0/0
+E: MODALIAS=usb:v1D6Bp0002d0304dc09dsc00dp01ic09isc00ip00
+E: PRODUCT=1d6b/2/304
+E: SUBSYSTEM=usb
+E: TYPE=9/0/1
+E: USEC_INITIALIZED=77778
+
+P: /devices/platform/dummy_hcd/usb1/usb_device/usbdev1.1
+N: usbdev1.1
+E: DEVNAME=/dev/usbdev1.1
+E: DEVPATH=/devices/platform/dummy_hcd/usb1/usb_device/usbdev1.1
+E: MAJOR=189
+E: MINOR=0
+E: SUBSYSTEM=usb_device
+
+P: /devices/platform/dummy_udc
+E: DEVPATH=/devices/platform/dummy_udc
+E: DRIVER=dummy_udc
+E: MODALIAS=platform:dummy_udc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/dummy_udc/udc/dummy_udc
+E: DEVPATH=/devices/platform/dummy_udc/udc/dummy_udc
+E: SUBSYSTEM=udc
+E: USB_UDC_NAME=dummy_udc
+
+P: /devices/platform/ion-sunxi.0
+E: DEVPATH=/devices/platform/ion-sunxi.0
+E: DRIVER=ion-sunxi
+E: MODALIAS=platform:ion-sunxi
+E: SUBSYSTEM=platform
+
+P: /devices/platform/power.0
+E: DEVPATH=/devices/platform/power.0
+E: DRIVER=power
+E: MODALIAS=platform:power
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-aldo1
+E: DEVPATH=/devices/platform/reg-22-cs-aldo1
+E: DRIVER=reg-22-cs-aldo1
+E: MODALIAS=platform:reg-22-cs-aldo1
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-aldo2
+E: DEVPATH=/devices/platform/reg-22-cs-aldo2
+E: DRIVER=reg-22-cs-aldo2
+E: MODALIAS=platform:reg-22-cs-aldo2
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-aldo3
+E: DEVPATH=/devices/platform/reg-22-cs-aldo3
+E: DRIVER=reg-22-cs-aldo3
+E: MODALIAS=platform:reg-22-cs-aldo3
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dcdc1
+E: DEVPATH=/devices/platform/reg-22-cs-dcdc1
+E: DRIVER=reg-22-cs-dcdc1
+E: MODALIAS=platform:reg-22-cs-dcdc1
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dcdc2
+E: DEVPATH=/devices/platform/reg-22-cs-dcdc2
+E: DRIVER=reg-22-cs-dcdc2
+E: MODALIAS=platform:reg-22-cs-dcdc2
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dcdc3
+E: DEVPATH=/devices/platform/reg-22-cs-dcdc3
+E: DRIVER=reg-22-cs-dcdc3
+E: MODALIAS=platform:reg-22-cs-dcdc3
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dcdc4
+E: DEVPATH=/devices/platform/reg-22-cs-dcdc4
+E: DRIVER=reg-22-cs-dcdc4
+E: MODALIAS=platform:reg-22-cs-dcdc4
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dcdc5
+E: DEVPATH=/devices/platform/reg-22-cs-dcdc5
+E: DRIVER=reg-22-cs-dcdc5
+E: MODALIAS=platform:reg-22-cs-dcdc5
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dldo1
+E: DEVPATH=/devices/platform/reg-22-cs-dldo1
+E: DRIVER=reg-22-cs-dldo1
+E: MODALIAS=platform:reg-22-cs-dldo1
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dldo2
+E: DEVPATH=/devices/platform/reg-22-cs-dldo2
+E: DRIVER=reg-22-cs-dldo2
+E: MODALIAS=platform:reg-22-cs-dldo2
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dldo3
+E: DEVPATH=/devices/platform/reg-22-cs-dldo3
+E: DRIVER=reg-22-cs-dldo3
+E: MODALIAS=platform:reg-22-cs-dldo3
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-dldo4
+E: DEVPATH=/devices/platform/reg-22-cs-dldo4
+E: DRIVER=reg-22-cs-dldo4
+E: MODALIAS=platform:reg-22-cs-dldo4
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-eldo1
+E: DEVPATH=/devices/platform/reg-22-cs-eldo1
+E: DRIVER=reg-22-cs-eldo1
+E: MODALIAS=platform:reg-22-cs-eldo1
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-eldo2
+E: DEVPATH=/devices/platform/reg-22-cs-eldo2
+E: DRIVER=reg-22-cs-eldo2
+E: MODALIAS=platform:reg-22-cs-eldo2
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-eldo3
+E: DEVPATH=/devices/platform/reg-22-cs-eldo3
+E: DRIVER=reg-22-cs-eldo3
+E: MODALIAS=platform:reg-22-cs-eldo3
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-gpio0ldo
+E: DEVPATH=/devices/platform/reg-22-cs-gpio0ldo
+E: DRIVER=reg-22-cs-gpio0ldo
+E: MODALIAS=platform:reg-22-cs-gpio0ldo
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-gpio1ldo
+E: DEVPATH=/devices/platform/reg-22-cs-gpio1ldo
+E: DRIVER=reg-22-cs-gpio1ldo
+E: MODALIAS=platform:reg-22-cs-gpio1ldo
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-22-cs-rtc
+E: DEVPATH=/devices/platform/reg-22-cs-rtc
+E: DRIVER=reg-22-cs-rtc
+E: MODALIAS=platform:reg-22-cs-rtc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/reg-dummy
+E: DEVPATH=/devices/platform/reg-dummy
+E: DRIVER=reg-dummy
+E: MODALIAS=platform:reg-dummy
+E: SUBSYSTEM=platform
+
+P: /devices/platform/regulatory.0
+E: COUNTRY=00
+E: DEVPATH=/devices/platform/regulatory.0
+E: MODALIAS=platform:regulatory
+E: SUBSYSTEM=platform
+
+P: /devices/platform/rtl_bluesleep.0
+E: DEVPATH=/devices/platform/rtl_bluesleep.0
+E: DRIVER=rtl_bluesleep
+E: MODALIAS=platform:rtl_bluesleep
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-arisc
+E: DEVPATH=/devices/platform/sunxi-arisc
+E: DRIVER=sunxi-arisc
+E: MODALIAS=platform:sunxi-arisc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-budget-cooling
+E: DEVPATH=/devices/platform/sunxi-budget-cooling
+E: DRIVER=sunxi-budget-cooling
+E: MODALIAS=platform:sunxi-budget-cooling
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-cedar
+E: DEVPATH=/devices/platform/sunxi-cedar
+E: DRIVER=sunxi-cedar
+E: MODALIAS=platform:sunxi-cedar
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-ddrfreq
+E: DEVPATH=/devices/platform/sunxi-ddrfreq
+E: DRIVER=sunxi-ddrfreq
+E: MODALIAS=platform:sunxi-ddrfreq
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-ddrfreq/devfreq/sunxi-ddrfreq
+E: DEVPATH=/devices/platform/sunxi-ddrfreq/devfreq/sunxi-ddrfreq
+E: SUBSYSTEM=devfreq
+
+P: /devices/platform/sunxi-ehci.1
+E: DEVPATH=/devices/platform/sunxi-ehci.1
+E: DRIVER=sunxi-ehci
+E: MODALIAS=platform:sunxi-ehci
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-mmc.0
+E: DEVPATH=/devices/platform/sunxi-mmc.0
+E: DRIVER=sunxi-mmc
+E: MODALIAS=platform:sunxi-mmc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-mmc.0/mmc_host/mmc0
+E: DEVPATH=/devices/platform/sunxi-mmc.0/mmc_host/mmc0
+E: SUBSYSTEM=mmc_host
+
+P: /devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007
+E: DEVPATH=/devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007
+E: DRIVER=mmcblk
+E: MMC_NAME=SD16G
+E: MMC_TYPE=SD
+E: MODALIAS=mmc:block
+E: SUBSYSTEM=mmc
+
+P: /devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007/block/mmcblk0
+N: mmcblk0
+S: disk/by-id/mmc-SD16G_0x000f23ac
+S: disk/by-path/platform-sunxi-mmc.0
+E: DEVLINKS=/dev/disk/by-id/mmc-SD16G_0x000f23ac /dev/disk/by-path/platform-sunxi-mmc.0
+E: DEVNAME=/dev/mmcblk0
+E: DEVPATH=/devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007/block/mmcblk0
+E: DEVTYPE=disk
+E: ID_NAME=SD16G
+E: ID_PART_TABLE_TYPE=dos
+E: ID_PATH=platform-sunxi-mmc.0
+E: ID_PATH_TAG=platform-sunxi-mmc_0
+E: ID_SERIAL=0x000f23ac
+E: MAJOR=179
+E: MINOR=0
+E: NPARTS=2
+E: SUBSYSTEM=block
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=89815
+
+P: /devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007/block/mmcblk0/mmcblk0p1
+N: mmcblk0p1
+S: disk/by-id/mmc-SD16G_0x000f23ac-part1
+S: disk/by-label/IsZ
+S: disk/by-path/platform-sunxi-mmc.0-part1
+S: disk/by-uuid/FFE8-1E1F
+E: DEVLINKS=/dev/disk/by-id/mmc-SD16G_0x000f23ac-part1 /dev/disk/by-label/IsZ /dev/disk/by-path/platform-sunxi-mmc.0-part1 /dev/disk/by-uuid/FFE8-1E1F
+E: DEVNAME=/dev/mmcblk0p1
+E: DEVPATH=/devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007/block/mmcblk0/mmcblk0p1
+E: DEVTYPE=partition
+E: ID_FS_LABEL=IsZ
+E: ID_FS_LABEL_ENC=IsZ
+E: ID_FS_TYPE=vfat
+E: ID_FS_USAGE=filesystem
+E: ID_FS_UUID=FFE8-1E1F
+E: ID_FS_UUID_ENC=FFE8-1E1F
+E: ID_FS_VERSION=FAT32
+E: ID_NAME=SD16G
+E: ID_PART_ENTRY_DISK=179:0
+E: ID_PART_ENTRY_NUMBER=1
+E: ID_PART_ENTRY_OFFSET=2048
+E: ID_PART_ENTRY_SCHEME=dos
+E: ID_PART_ENTRY_SIZE=1048576
+E: ID_PART_ENTRY_TYPE=0x83
+E: ID_PART_TABLE_TYPE=dos
+E: ID_PATH=platform-sunxi-mmc.0
+E: ID_PATH_TAG=platform-sunxi-mmc_0
+E: ID_SERIAL=0x000f23ac
+E: MAJOR=179
+E: MINOR=1
+E: PARTN=1
+E: SUBSYSTEM=block
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=90230
+
+P: /devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007/block/mmcblk0/mmcblk0p2
+N: mmcblk0p2
+S: disk/by-id/mmc-SD16G_0x000f23ac-part2
+S: disk/by-path/platform-sunxi-mmc.0-part2
+S: disk/by-uuid/3179e8d4-ac1d-43b5-944b-c9a2500454d8
+E: DEVLINKS=/dev/disk/by-id/mmc-SD16G_0x000f23ac-part2 /dev/disk/by-path/platform-sunxi-mmc.0-part2 /dev/disk/by-uuid/3179e8d4-ac1d-43b5-944b-c9a2500454d8
+E: DEVNAME=/dev/mmcblk0p2
+E: DEVPATH=/devices/platform/sunxi-mmc.0/mmc_host/mmc0/mmc0:0007/block/mmcblk0/mmcblk0p2
+E: DEVTYPE=partition
+E: ID_FS_TYPE=ext4
+E: ID_FS_USAGE=filesystem
+E: ID_FS_UUID=3179e8d4-ac1d-43b5-944b-c9a2500454d8
+E: ID_FS_UUID_ENC=3179e8d4-ac1d-43b5-944b-c9a2500454d8
+E: ID_FS_VERSION=1.0
+E: ID_NAME=SD16G
+E: ID_PART_ENTRY_DISK=179:0
+E: ID_PART_ENTRY_NUMBER=2
+E: ID_PART_ENTRY_OFFSET=1050624
+E: ID_PART_ENTRY_SCHEME=dos
+E: ID_PART_ENTRY_SIZE=30218240
+E: ID_PART_ENTRY_TYPE=0x83
+E: ID_PART_TABLE_TYPE=dos
+E: ID_PATH=platform-sunxi-mmc.0
+E: ID_PATH_TAG=platform-sunxi-mmc_0
+E: ID_SERIAL=0x000f23ac
+E: MAJOR=179
+E: MINOR=2
+E: PARTN=2
+E: SUBSYSTEM=block
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=90551
+
+P: /devices/platform/sunxi-mmc.1
+E: DEVPATH=/devices/platform/sunxi-mmc.1
+E: DRIVER=sunxi-mmc
+E: MODALIAS=platform:sunxi-mmc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-mmc.1/mmc_host/mmc1
+E: DEVPATH=/devices/platform/sunxi-mmc.1/mmc_host/mmc1
+E: SUBSYSTEM=mmc_host
+
+P: /devices/platform/sunxi-module.0
+E: DEVPATH=/devices/platform/sunxi-module.0
+E: DRIVER=sunxi-module
+E: MODALIAS=platform:sunxi-module
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-pinctrl
+E: DEVPATH=/devices/platform/sunxi-pinctrl
+E: DRIVER=sunxi-pinctrl
+E: MODALIAS=platform:sunxi-pinctrl
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-rfkill.0
+E: DEVPATH=/devices/platform/sunxi-rfkill.0
+E: DRIVER=sunxi-rfkill
+E: MODALIAS=platform:sunxi-rfkill
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-rfkill.0/rfkill/rfkill0
+E: DEVPATH=/devices/platform/sunxi-rfkill.0/rfkill/rfkill0
+E: ID_PATH=platform-sunxi-rfkill.0
+E: ID_PATH_TAG=platform-sunxi-rfkill_0
+E: RFKILL_NAME=ap6210
+E: RFKILL_STATE=0
+E: RFKILL_TYPE=bluetooth
+E: SUBSYSTEM=rfkill
+E: SYSTEMD_WANTS=systemd-rfkill@rfkill0.service
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=92490
+
+P: /devices/platform/sunxi-rtc
+E: DEVPATH=/devices/platform/sunxi-rtc
+E: DRIVER=sunxi-rtc
+E: MODALIAS=platform:sunxi-rtc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi-rtc/rtc/rtc0
+N: rtc0
+L: -100
+S: rtc
+E: DEVLINKS=/dev/rtc
+E: DEVNAME=/dev/rtc0
+E: DEVPATH=/devices/platform/sunxi-rtc/rtc/rtc0
+E: MAJOR=254
+E: MINOR=0
+E: SUBSYSTEM=rtc
+E: USEC_INITIALIZED=93205
+
+P: /devices/platform/sunxi_dmac
+E: DEVPATH=/devices/platform/sunxi_dmac
+E: DRIVER=sunxi_dmac
+E: MODALIAS=platform:sunxi_dmac
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan0
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan0
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan1
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan1
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan2
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan2
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan3
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan3
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan4
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan4
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan5
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan5
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan6
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan6
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_dmac/dma/dma0chan7
+E: DEVPATH=/devices/platform/sunxi_dmac/dma/dma0chan7
+E: SUBSYSTEM=dma
+
+P: /devices/platform/sunxi_hcd_host0
+E: DEVPATH=/devices/platform/sunxi_hcd_host0
+E: DRIVER=sunxi_hcd_host0
+E: MODALIAS=platform:sunxi_hcd_host0
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi_hcd_host0/usb2
+N: bus/usb/002/001
+E: BUSNUM=002
+E: DEVNAME=/dev/bus/usb/002/001
+E: DEVNUM=001
+E: DEVPATH=/devices/platform/sunxi_hcd_host0/usb2
+E: DEVTYPE=usb_device
+E: DRIVER=usb
+E: MAJOR=189
+E: MINOR=128
+E: PRODUCT=1d6b/1/304
+E: SUBSYSTEM=usb
+E: TYPE=9/0/0
+
+P: /devices/platform/sunxi_hcd_host0/usb2/2-0:1.0
+E: DEVPATH=/devices/platform/sunxi_hcd_host0/usb2/2-0:1.0
+E: DEVTYPE=usb_interface
+E: DRIVER=hub
+E: ID_MODEL_FROM_DATABASE=1.1 root hub
+E: ID_USB_CLASS_FROM_DATABASE=Hub
+E: ID_USB_PROTOCOL_FROM_DATABASE=Full speed (or root) hub
+E: ID_VENDOR_FROM_DATABASE=Linux Foundation
+E: INTERFACE=9/0/0
+E: MODALIAS=usb:v1D6Bp0001d0304dc09dsc00dp00ic09isc00ip00
+E: PRODUCT=1d6b/1/304
+E: SUBSYSTEM=usb
+E: TYPE=9/0/0
+E: USEC_INITIALIZED=97807
+
+P: /devices/platform/sunxi_hcd_host0/usb2/usb_device/usbdev2.1
+N: usbdev2.1
+E: DEVNAME=/dev/usbdev2.1
+E: DEVPATH=/devices/platform/sunxi_hcd_host0/usb2/usb_device/usbdev2.1
+E: MAJOR=189
+E: MINOR=128
+E: SUBSYSTEM=usb_device
+
+P: /devices/platform/sunxi_pwm
+E: DEVPATH=/devices/platform/sunxi_pwm
+E: DRIVER=sunxi_pwm
+E: MODALIAS=platform:sunxi_pwm
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi_usb_udc
+E: DEVPATH=/devices/platform/sunxi_usb_udc
+E: DRIVER=sunxi_usb_udc
+E: MODALIAS=platform:sunxi_usb_udc
+E: SUBSYSTEM=platform
+
+P: /devices/platform/sunxi_usb_udc/gadget/tty/ttyGS0
+N: ttyGS0
+E: DEVNAME=/dev/ttyGS0
+E: DEVPATH=/devices/platform/sunxi_usb_udc/gadget/tty/ttyGS0
+E: MAJOR=248
+E: MINOR=0
+E: SUBSYSTEM=tty
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=99473
+
+P: /devices/platform/sunxi_usb_udc/gadget/tty/ttyGS1
+N: ttyGS1
+E: DEVNAME=/dev/ttyGS1
+E: DEVPATH=/devices/platform/sunxi_usb_udc/gadget/tty/ttyGS1
+E: MAJOR=248
+E: MINOR=1
+E: SUBSYSTEM=tty
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=99913
+
+P: /devices/platform/sunxi_usb_udc/gadget/tty/ttyGS2
+N: ttyGS2
+E: DEVNAME=/dev/ttyGS2
+E: DEVPATH=/devices/platform/sunxi_usb_udc/gadget/tty/ttyGS2
+E: MAJOR=248
+E: MINOR=2
+E: SUBSYSTEM=tty
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=882
+
+P: /devices/platform/sunxi_usb_udc/gadget/tty/ttyGS3
+N: ttyGS3
+E: DEVNAME=/dev/ttyGS3
+E: DEVPATH=/devices/platform/sunxi_usb_udc/gadget/tty/ttyGS3
+E: MAJOR=248
+E: MINOR=3
+E: SUBSYSTEM=tty
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=1363
+
+P: /devices/platform/sunxi_usb_udc/udc/sunxi_usb_udc
+E: DEVPATH=/devices/platform/sunxi_usb_udc/udc/sunxi_usb_udc
+E: DRIVER=android_usb
+E: SUBSYSTEM=udc
+E: USB_UDC_DRIVER=android_usb
+E: USB_UDC_NAME=sunxi_usb_udc
+
+P: /devices/platform/twi.0
+E: DEVPATH=/devices/platform/twi.0
+E: DRIVER=twi
+E: MODALIAS=platform:twi
+E: SUBSYSTEM=platform
+
+P: /devices/platform/twi.0/i2c-0
+E: DEVPATH=/devices/platform/twi.0/i2c-0
+E: SUBSYSTEM=i2c
+
+P: /devices/platform/twi.0/i2c-0/0-0014
+E: DEVPATH=/devices/platform/twi.0/i2c-0/0-0014
+E: DRIVER=gt9xxf_ts
+E: MODALIAS=i2c:gt9xxf_ts
+E: SUBSYSTEM=i2c
+
+P: /devices/platform/twi.1
+E: DEVPATH=/devices/platform/twi.1
+E: DRIVER=twi
+E: MODALIAS=platform:twi
+E: SUBSYSTEM=platform
+
+P: /devices/platform/twi.1/i2c-1
+E: DEVPATH=/devices/platform/twi.1/i2c-1
+E: SUBSYSTEM=i2c
+
+P: /devices/platform/twi.2
+E: DEVPATH=/devices/platform/twi.2
+E: DRIVER=twi
+E: MODALIAS=platform:twi
+E: SUBSYSTEM=platform
+
+P: /devices/platform/twi.2/i2c-2
+E: DEVPATH=/devices/platform/twi.2/i2c-2
+E: SUBSYSTEM=i2c
+
+P: /devices/platform/uart.0
+E: DEVPATH=/devices/platform/uart.0
+E: DRIVER=uart
+E: MODALIAS=platform:uart
+E: SUBSYSTEM=platform
+
+P: /devices/platform/uart.0/tty/ttyS0
+N: ttyS0
+E: DEVNAME=/dev/ttyS0
+E: DEVPATH=/devices/platform/uart.0/tty/ttyS0
+E: MAJOR=249
+E: MINOR=0
+E: SUBSYSTEM=tty
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=5965
+
+P: /devices/platform/uart.1
+E: DEVPATH=/devices/platform/uart.1
+E: DRIVER=uart
+E: MODALIAS=platform:uart
+E: SUBSYSTEM=platform
+
+P: /devices/platform/uart.1/tty/ttyS1
+N: ttyS1
+E: DEVNAME=/dev/ttyS1
+E: DEVPATH=/devices/platform/uart.1/tty/ttyS1
+E: MAJOR=249
+E: MINOR=1
+E: SUBSYSTEM=tty
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=6999
+
+P: /devices/platform/wifi_pm.0
+E: DEVPATH=/devices/platform/wifi_pm.0
+E: DRIVER=wifi_pm
+E: MODALIAS=platform:wifi_pm
+E: SUBSYSTEM=platform
+
+P: /devices/system/clocksource/clocksource0
+E: DEVPATH=/devices/system/clocksource/clocksource0
+E: SUBSYSTEM=clocksource
+
+P: /devices/system/cpu/cpu0
+E: DEVPATH=/devices/system/cpu/cpu0
+E: SUBSYSTEM=cpu
+
+P: /devices/system/cpu/cpu1
+E: DEVPATH=/devices/system/cpu/cpu1
+E: SUBSYSTEM=cpu
+
+P: /devices/system/cpu/cpu2
+E: DEVPATH=/devices/system/cpu/cpu2
+E: SUBSYSTEM=cpu
+
+P: /devices/system/cpu/cpu3
+E: DEVPATH=/devices/system/cpu/cpu3
+E: SUBSYSTEM=cpu
+
+P: /devices/virtual/android_usb/android0
+E: DEVPATH=/devices/virtual/android_usb/android0
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_accessory
+E: DEVPATH=/devices/virtual/android_usb/android0/f_accessory
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_acm
+E: DEVPATH=/devices/virtual/android_usb/android0/f_acm
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_adb
+E: DEVPATH=/devices/virtual/android_usb/android0/f_adb
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_audio_source
+E: DEVPATH=/devices/virtual/android_usb/android0/f_audio_source
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_ffs
+E: DEVPATH=/devices/virtual/android_usb/android0/f_ffs
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_mass_storage
+E: DEVPATH=/devices/virtual/android_usb/android0/f_mass_storage
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_mtp
+E: DEVPATH=/devices/virtual/android_usb/android0/f_mtp
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_ptp
+E: DEVPATH=/devices/virtual/android_usb/android0/f_ptp
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/android_usb/android0/f_rndis
+E: DEVPATH=/devices/virtual/android_usb/android0/f_rndis
+E: SUBSYSTEM=android_usb
+
+P: /devices/virtual/bdi/179:0
+E: DEVPATH=/devices/virtual/bdi/179:0
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/253:0
+E: DEVPATH=/devices/virtual/bdi/253:0
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:0
+E: DEVPATH=/devices/virtual/bdi/7:0
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:1
+E: DEVPATH=/devices/virtual/bdi/7:1
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:2
+E: DEVPATH=/devices/virtual/bdi/7:2
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:3
+E: DEVPATH=/devices/virtual/bdi/7:3
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:4
+E: DEVPATH=/devices/virtual/bdi/7:4
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:5
+E: DEVPATH=/devices/virtual/bdi/7:5
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:6
+E: DEVPATH=/devices/virtual/bdi/7:6
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/7:7
+E: DEVPATH=/devices/virtual/bdi/7:7
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/bdi/default
+E: DEVPATH=/devices/virtual/bdi/default
+E: SUBSYSTEM=bdi
+
+P: /devices/virtual/block/loop0
+N: loop0
+E: DEVNAME=/dev/loop0
+E: DEVPATH=/devices/virtual/block/loop0
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=0
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=25075
+
+P: /devices/virtual/block/loop1
+N: loop1
+E: DEVNAME=/dev/loop1
+E: DEVPATH=/devices/virtual/block/loop1
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=1
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=25905
+
+P: /devices/virtual/block/loop2
+N: loop2
+E: DEVNAME=/dev/loop2
+E: DEVPATH=/devices/virtual/block/loop2
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=2
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=26748
+
+P: /devices/virtual/block/loop3
+N: loop3
+E: DEVNAME=/dev/loop3
+E: DEVPATH=/devices/virtual/block/loop3
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=3
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=27626
+
+P: /devices/virtual/block/loop4
+N: loop4
+E: DEVNAME=/dev/loop4
+E: DEVPATH=/devices/virtual/block/loop4
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=4
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=28506
+
+P: /devices/virtual/block/loop5
+N: loop5
+E: DEVNAME=/dev/loop5
+E: DEVPATH=/devices/virtual/block/loop5
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=5
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=29400
+
+P: /devices/virtual/block/loop6
+N: loop6
+E: DEVNAME=/dev/loop6
+E: DEVPATH=/devices/virtual/block/loop6
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=6
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=30478
+
+P: /devices/virtual/block/loop7
+N: loop7
+E: DEVNAME=/dev/loop7
+E: DEVPATH=/devices/virtual/block/loop7
+E: DEVTYPE=disk
+E: MAJOR=7
+E: MINOR=7
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: SYSTEMD_READY=0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=31570
+
+P: /devices/virtual/block/zram0
+N: zram0
+E: DEVNAME=/dev/zram0
+E: DEVPATH=/devices/virtual/block/zram0
+E: DEVTYPE=disk
+E: MAJOR=253
+E: MINOR=0
+E: NPARTS=0
+E: SUBSYSTEM=block
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=32630
+
+P: /devices/virtual/capture/capture
+N: capture
+E: DEVNAME=/dev/capture
+E: DEVPATH=/devices/virtual/capture/capture
+E: MAJOR=250
+E: MINOR=0
+E: SUBSYSTEM=capture
+
+P: /devices/virtual/cedar_dev/cedar_dev
+N: cedar_dev
+E: DEVNAME=/dev/cedar_dev
+E: DEVPATH=/devices/virtual/cedar_dev/cedar_dev
+E: MAJOR=150
+E: MINOR=0
+E: SUBSYSTEM=cedar_dev
+
+P: /devices/virtual/disp/disp
+N: disp
+E: DEVNAME=/dev/disp
+E: DEVPATH=/devices/virtual/disp/disp
+E: MAJOR=251
+E: MINOR=0
+E: SUBSYSTEM=disp
+
+P: /devices/virtual/graphics/fbcon
+E: DEVPATH=/devices/virtual/graphics/fbcon
+E: SUBSYSTEM=graphics
+
+P: /devices/virtual/hwmon/hwmon1
+E: DEVPATH=/devices/virtual/hwmon/hwmon1
+E: SUBSYSTEM=hwmon
+
+P: /devices/virtual/input/input1
+E: DEVPATH=/devices/virtual/input/input1
+E: EV=3
+E: ID_INPUT=1
+E: ID_INPUT_KEY=1
+E: KEY=800 c0040 0 0 10000000
+E: MODALIAS=input:b0019v0001p0001e0100-e0,1,k72,73,8B,ramlsfw
+E: NAME="sunxi-keyboard"
+E: PHYS="sunxikbd/input0"
+E: PRODUCT=19/1/1/100
+E: PROP=0
+E: SUBSYSTEM=input
+E: TAGS=:seat:
+E: USEC_INITIALIZED=39590
+
+P: /devices/virtual/input/input1/event1
+N: input/event1
+E: DEVNAME=/dev/input/event1
+E: DEVPATH=/devices/virtual/input/input1/event1
+E: ID_INPUT=1
+E: ID_INPUT_KEY=1
+E: MAJOR=13
+E: MINOR=65
+E: SUBSYSTEM=input
+E: USEC_INITIALIZED=40990
+
+P: /devices/virtual/input/input2
+E: ABS=100 0
+E: DEVPATH=/devices/virtual/input/input2
+E: EV=9
+E: ID_INPUT=1
+E: MODALIAS=input:b0019v0001p0001e0100-e0,3,kra28,mlsfw
+E: NAME="sunxi-ths"
+E: PHYS="sunxiths/input0"
+E: PRODUCT=19/1/1/100
+E: PROP=0
+E: SUBSYSTEM=input
+E: TAGS=:seat:
+E: USEC_INITIALIZED=42143
+
+P: /devices/virtual/input/input2/event2
+N: input/event2
+E: DEVNAME=/dev/input/event2
+E: DEVPATH=/devices/virtual/input/input2/event2
+E: ID_INPUT=1
+E: MAJOR=13
+E: MINOR=66
+E: SUBSYSTEM=input
+E: USEC_INITIALIZED=43274
+
+P: /devices/virtual/input/input3
+E: ABS=2658000 0
+E: DEVPATH=/devices/virtual/input/input3
+E: EV=b
+E: ID_INPUT=1
+E: KEY=0
+E: MODALIAS=input:b0018vDEADpBEEFe28BB-e0,1,3,kra2F,30,32,35,36,39,mlsfw
+E: NAME="gt9xxf_ts"
+E: PHYS="input/goodix-ts"
+E: PRODUCT=18/dead/beef/28bb
+E: PROP=2
+E: SUBSYSTEM=input
+E: TAGS=:seat:
+E: USEC_INITIALIZED=44453
+
+P: /devices/virtual/input/input3/event3
+N: input/event3
+E: DEVNAME=/dev/input/event3
+E: DEVPATH=/devices/virtual/input/input3/event3
+E: ID_INPUT=1
+E: MAJOR=13
+E: MINOR=67
+E: SUBSYSTEM=input
+E: USEC_INITIALIZED=45607
+
+P: /devices/virtual/input/mice
+N: input/mice
+E: DEVNAME=/dev/input/mice
+E: DEVPATH=/devices/virtual/input/mice
+E: MAJOR=13
+E: MINOR=63
+E: SUBSYSTEM=input
+
+P: /devices/virtual/lcd/lcd
+N: lcd
+E: DEVNAME=/dev/lcd
+E: DEVPATH=/devices/virtual/lcd/lcd
+E: MAJOR=247
+E: MINOR=0
+E: SUBSYSTEM=lcd
+
+P: /devices/virtual/mem/full
+N: full
+E: DEVMODE=0666
+E: DEVNAME=/dev/full
+E: DEVPATH=/devices/virtual/mem/full
+E: MAJOR=1
+E: MINOR=7
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/kmem
+N: kmem
+E: DEVNAME=/dev/kmem
+E: DEVPATH=/devices/virtual/mem/kmem
+E: MAJOR=1
+E: MINOR=2
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/kmsg
+N: kmsg
+E: DEVNAME=/dev/kmsg
+E: DEVPATH=/devices/virtual/mem/kmsg
+E: MAJOR=1
+E: MINOR=11
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/mem
+N: mem
+E: DEVNAME=/dev/mem
+E: DEVPATH=/devices/virtual/mem/mem
+E: MAJOR=1
+E: MINOR=1
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/null
+N: null
+E: DEVMODE=0666
+E: DEVNAME=/dev/null
+E: DEVPATH=/devices/virtual/mem/null
+E: MAJOR=1
+E: MINOR=3
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/random
+N: random
+E: DEVMODE=0666
+E: DEVNAME=/dev/random
+E: DEVPATH=/devices/virtual/mem/random
+E: MAJOR=1
+E: MINOR=8
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/urandom
+N: urandom
+E: DEVMODE=0666
+E: DEVNAME=/dev/urandom
+E: DEVPATH=/devices/virtual/mem/urandom
+E: MAJOR=1
+E: MINOR=9
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/mem/zero
+N: zero
+E: DEVMODE=0666
+E: DEVNAME=/dev/zero
+E: DEVPATH=/devices/virtual/mem/zero
+E: MAJOR=1
+E: MINOR=5
+E: SUBSYSTEM=mem
+
+P: /devices/virtual/misc/alarm
+N: alarm
+E: DEVNAME=/dev/alarm
+E: DEVPATH=/devices/virtual/misc/alarm
+E: MAJOR=10
+E: MINOR=47
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/android_adb
+N: android_adb
+E: DEVNAME=/dev/android_adb
+E: DEVPATH=/devices/virtual/misc/android_adb
+E: MAJOR=10
+E: MINOR=57
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/apm_bios
+N: apm_bios
+E: DEVNAME=/dev/apm_bios
+E: DEVPATH=/devices/virtual/misc/apm_bios
+E: MAJOR=10
+E: MINOR=134
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/ashmem
+N: ashmem
+E: DEVNAME=/dev/ashmem
+E: DEVPATH=/devices/virtual/misc/ashmem
+E: MAJOR=10
+E: MINOR=52
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/binder
+N: binder
+E: DEVNAME=/dev/binder
+E: DEVPATH=/devices/virtual/misc/binder
+E: MAJOR=10
+E: MINOR=53
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/cachefiles
+N: cachefiles
+E: DEVNAME=/dev/cachefiles
+E: DEVPATH=/devices/virtual/misc/cachefiles
+E: MAJOR=10
+E: MINOR=61
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/cpu_dma_latency
+N: cpu_dma_latency
+E: DEVNAME=/dev/cpu_dma_latency
+E: DEVPATH=/devices/virtual/misc/cpu_dma_latency
+E: MAJOR=10
+E: MINOR=45
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/cuse
+N: cuse
+E: DEVNAME=/dev/cuse
+E: DEVPATH=/devices/virtual/misc/cuse
+E: MAJOR=10
+E: MINOR=59
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/device-mapper
+N: mapper/control
+E: DEVNAME=/dev/mapper/control
+E: DEVPATH=/devices/virtual/misc/device-mapper
+E: MAJOR=10
+E: MINOR=236
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/fuse
+N: fuse
+E: DEVNAME=/dev/fuse
+E: DEVPATH=/devices/virtual/misc/fuse
+E: MAJOR=10
+E: MINOR=229
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/ion
+N: ion
+E: DEVNAME=/dev/ion
+E: DEVPATH=/devices/virtual/misc/ion
+E: MAJOR=10
+E: MINOR=63
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/log_events
+N: log_events
+E: DEVNAME=/dev/log_events
+E: DEVPATH=/devices/virtual/misc/log_events
+E: MAJOR=10
+E: MINOR=50
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/log_main
+N: log_main
+E: DEVNAME=/dev/log_main
+E: DEVPATH=/devices/virtual/misc/log_main
+E: MAJOR=10
+E: MINOR=51
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/log_radio
+N: log_radio
+E: DEVNAME=/dev/log_radio
+E: DEVPATH=/devices/virtual/misc/log_radio
+E: MAJOR=10
+E: MINOR=49
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/log_system
+N: log_system
+E: DEVNAME=/dev/log_system
+E: DEVPATH=/devices/virtual/misc/log_system
+E: MAJOR=10
+E: MINOR=48
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/loop-control
+N: loop-control
+E: DEVNAME=/dev/loop-control
+E: DEVPATH=/devices/virtual/misc/loop-control
+E: MAJOR=10
+E: MINOR=237
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/mtp_usb
+N: mtp_usb
+E: DEVNAME=/dev/mtp_usb
+E: DEVPATH=/devices/virtual/misc/mtp_usb
+E: MAJOR=10
+E: MINOR=56
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/network_latency
+N: network_latency
+E: DEVNAME=/dev/network_latency
+E: DEVPATH=/devices/virtual/misc/network_latency
+E: MAJOR=10
+E: MINOR=44
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/network_throughput
+N: network_throughput
+E: DEVNAME=/dev/network_throughput
+E: DEVPATH=/devices/virtual/misc/network_throughput
+E: MAJOR=10
+E: MINOR=43
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/psaux
+N: psaux
+E: DEVNAME=/dev/psaux
+E: DEVPATH=/devices/virtual/misc/psaux
+E: MAJOR=10
+E: MINOR=1
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/rfkill
+N: rfkill
+E: DEVNAME=/dev/rfkill
+E: DEVPATH=/devices/virtual/misc/rfkill
+E: MAJOR=10
+E: MINOR=62
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/sunxi-reg
+N: sunxi-reg
+E: DEVNAME=/dev/sunxi-reg
+E: DEVPATH=/devices/virtual/misc/sunxi-reg
+E: MAJOR=10
+E: MINOR=60
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/sw_sync
+N: sw_sync
+E: DEVNAME=/dev/sw_sync
+E: DEVPATH=/devices/virtual/misc/sw_sync
+E: MAJOR=10
+E: MINOR=58
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/tun
+N: net/tun
+E: DEVNAME=/dev/net/tun
+E: DEVPATH=/devices/virtual/misc/tun
+E: MAJOR=10
+E: MINOR=200
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/uhid
+N: uhid
+E: DEVNAME=/dev/uhid
+E: DEVPATH=/devices/virtual/misc/uhid
+E: MAJOR=10
+E: MINOR=54
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/uinput
+N: uinput
+E: DEVNAME=/dev/uinput
+E: DEVPATH=/devices/virtual/misc/uinput
+E: MAJOR=10
+E: MINOR=223
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/usb_accessory
+N: usb_accessory
+E: DEVNAME=/dev/usb_accessory
+E: DEVPATH=/devices/virtual/misc/usb_accessory
+E: MAJOR=10
+E: MINOR=55
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/misc/xt_qtaguid
+N: xt_qtaguid
+E: DEVNAME=/dev/xt_qtaguid
+E: DEVPATH=/devices/virtual/misc/xt_qtaguid
+E: MAJOR=10
+E: MINOR=46
+E: SUBSYSTEM=misc
+
+P: /devices/virtual/net/gre0
+E: DEVPATH=/devices/virtual/net/gre0
+E: IFINDEX=3
+E: INTERFACE=gre0
+E: SUBSYSTEM=net
+E: SYSTEMD_ALIAS=/sys/subsystem/net/devices/gre0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=7099
+
+P: /devices/virtual/net/ip6tnl0
+E: DEVPATH=/devices/virtual/net/ip6tnl0
+E: IFINDEX=5
+E: INTERFACE=ip6tnl0
+E: SUBSYSTEM=net
+E: SYSTEMD_ALIAS=/sys/subsystem/net/devices/ip6tnl0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=9157
+
+P: /devices/virtual/net/lo
+E: DEVPATH=/devices/virtual/net/lo
+E: IFINDEX=1
+E: INTERFACE=lo
+E: SUBSYSTEM=net
+
+P: /devices/virtual/net/sit0
+E: DEVPATH=/devices/virtual/net/sit0
+E: IFINDEX=4
+E: INTERFACE=sit0
+E: SUBSYSTEM=net
+E: SYSTEMD_ALIAS=/sys/subsystem/net/devices/sit0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=13407
+
+P: /devices/virtual/net/tunl0
+E: DEVPATH=/devices/virtual/net/tunl0
+E: IFINDEX=2
+E: INTERFACE=tunl0
+E: SUBSYSTEM=net
+E: SYSTEMD_ALIAS=/sys/subsystem/net/devices/tunl0
+E: TAGS=:systemd:
+E: USEC_INITIALIZED=15645
+
+P: /devices/virtual/ppp/ppp
+N: ppp
+E: DEVNAME=/dev/ppp
+E: DEVPATH=/devices/virtual/ppp/ppp
+E: MAJOR=108
+E: MINOR=0
+E: SUBSYSTEM=ppp
+
+P: /devices/virtual/regulator/regulator.0
+E: DEVPATH=/devices/virtual/regulator/regulator.0
+E: SUBSYSTEM=regulator
+
+P: /devices/virtual/sound/seq
+N: snd/seq
+E: DEVNAME=/dev/snd/seq
+E: DEVPATH=/devices/virtual/sound/seq
+E: MAJOR=116
+E: MINOR=1
+E: SUBSYSTEM=sound
+E: TAGS=:uaccess:
+E: USEC_INITIALIZED=22408
+
+P: /devices/virtual/sound/timer
+N: snd/timer
+E: DEVNAME=/dev/snd/timer
+E: DEVPATH=/devices/virtual/sound/timer
+E: MAJOR=116
+E: MINOR=33
+E: SUBSYSTEM=sound
+E: TAGS=:uaccess:
+E: USEC_INITIALIZED=24646
+
+P: /devices/virtual/sunxi_pwm/sunxi_pwm
+N: sunxi_pwm
+E: DEVNAME=/dev/sunxi_pwm
+E: DEVPATH=/devices/virtual/sunxi_pwm/sunxi_pwm
+E: MAJOR=252
+E: MINOR=0
+E: SUBSYSTEM=sunxi_pwm
+
+P: /devices/virtual/thermal/cooling_device0
+E: DEVPATH=/devices/virtual/thermal/cooling_device0
+E: SUBSYSTEM=thermal
+
+P: /devices/virtual/thermal/thermal_zone0
+E: DEVPATH=/devices/virtual/thermal/thermal_zone0
+E: SUBSYSTEM=thermal
+
+P: /devices/virtual/tty/console
+N: console
+E: DEVNAME=/dev/console
+E: DEVPATH=/devices/virtual/tty/console
+E: MAJOR=5
+E: MINOR=1
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/ptmx
+N: ptmx
+E: DEVMODE=0666
+E: DEVNAME=/dev/ptmx
+E: DEVPATH=/devices/virtual/tty/ptmx
+E: MAJOR=5
+E: MINOR=2
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty
+N: tty
+E: DEVMODE=0666
+E: DEVNAME=/dev/tty
+E: DEVPATH=/devices/virtual/tty/tty
+E: MAJOR=5
+E: MINOR=0
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty0
+N: tty0
+E: DEVNAME=/dev/tty0
+E: DEVPATH=/devices/virtual/tty/tty0
+E: MAJOR=4
+E: MINOR=0
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty1
+N: tty1
+E: DEVNAME=/dev/tty1
+E: DEVPATH=/devices/virtual/tty/tty1
+E: MAJOR=4
+E: MINOR=1
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty10
+N: tty10
+E: DEVNAME=/dev/tty10
+E: DEVPATH=/devices/virtual/tty/tty10
+E: MAJOR=4
+E: MINOR=10
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty11
+N: tty11
+E: DEVNAME=/dev/tty11
+E: DEVPATH=/devices/virtual/tty/tty11
+E: MAJOR=4
+E: MINOR=11
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty12
+N: tty12
+E: DEVNAME=/dev/tty12
+E: DEVPATH=/devices/virtual/tty/tty12
+E: MAJOR=4
+E: MINOR=12
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty13
+N: tty13
+E: DEVNAME=/dev/tty13
+E: DEVPATH=/devices/virtual/tty/tty13
+E: MAJOR=4
+E: MINOR=13
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty14
+N: tty14
+E: DEVNAME=/dev/tty14
+E: DEVPATH=/devices/virtual/tty/tty14
+E: MAJOR=4
+E: MINOR=14
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty15
+N: tty15
+E: DEVNAME=/dev/tty15
+E: DEVPATH=/devices/virtual/tty/tty15
+E: MAJOR=4
+E: MINOR=15
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty16
+N: tty16
+E: DEVNAME=/dev/tty16
+E: DEVPATH=/devices/virtual/tty/tty16
+E: MAJOR=4
+E: MINOR=16
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty17
+N: tty17
+E: DEVNAME=/dev/tty17
+E: DEVPATH=/devices/virtual/tty/tty17
+E: MAJOR=4
+E: MINOR=17
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty18
+N: tty18
+E: DEVNAME=/dev/tty18
+E: DEVPATH=/devices/virtual/tty/tty18
+E: MAJOR=4
+E: MINOR=18
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty19
+N: tty19
+E: DEVNAME=/dev/tty19
+E: DEVPATH=/devices/virtual/tty/tty19
+E: MAJOR=4
+E: MINOR=19
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty2
+N: tty2
+E: DEVNAME=/dev/tty2
+E: DEVPATH=/devices/virtual/tty/tty2
+E: MAJOR=4
+E: MINOR=2
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty20
+N: tty20
+E: DEVNAME=/dev/tty20
+E: DEVPATH=/devices/virtual/tty/tty20
+E: MAJOR=4
+E: MINOR=20
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty21
+N: tty21
+E: DEVNAME=/dev/tty21
+E: DEVPATH=/devices/virtual/tty/tty21
+E: MAJOR=4
+E: MINOR=21
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty22
+N: tty22
+E: DEVNAME=/dev/tty22
+E: DEVPATH=/devices/virtual/tty/tty22
+E: MAJOR=4
+E: MINOR=22
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty23
+N: tty23
+E: DEVNAME=/dev/tty23
+E: DEVPATH=/devices/virtual/tty/tty23
+E: MAJOR=4
+E: MINOR=23
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty24
+N: tty24
+E: DEVNAME=/dev/tty24
+E: DEVPATH=/devices/virtual/tty/tty24
+E: MAJOR=4
+E: MINOR=24
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty25
+N: tty25
+E: DEVNAME=/dev/tty25
+E: DEVPATH=/devices/virtual/tty/tty25
+E: MAJOR=4
+E: MINOR=25
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty26
+N: tty26
+E: DEVNAME=/dev/tty26
+E: DEVPATH=/devices/virtual/tty/tty26
+E: MAJOR=4
+E: MINOR=26
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty27
+N: tty27
+E: DEVNAME=/dev/tty27
+E: DEVPATH=/devices/virtual/tty/tty27
+E: MAJOR=4
+E: MINOR=27
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty28
+N: tty28
+E: DEVNAME=/dev/tty28
+E: DEVPATH=/devices/virtual/tty/tty28
+E: MAJOR=4
+E: MINOR=28
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty29
+N: tty29
+E: DEVNAME=/dev/tty29
+E: DEVPATH=/devices/virtual/tty/tty29
+E: MAJOR=4
+E: MINOR=29
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty3
+N: tty3
+E: DEVNAME=/dev/tty3
+E: DEVPATH=/devices/virtual/tty/tty3
+E: MAJOR=4
+E: MINOR=3
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty30
+N: tty30
+E: DEVNAME=/dev/tty30
+E: DEVPATH=/devices/virtual/tty/tty30
+E: MAJOR=4
+E: MINOR=30
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty31
+N: tty31
+E: DEVNAME=/dev/tty31
+E: DEVPATH=/devices/virtual/tty/tty31
+E: MAJOR=4
+E: MINOR=31
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty32
+N: tty32
+E: DEVNAME=/dev/tty32
+E: DEVPATH=/devices/virtual/tty/tty32
+E: MAJOR=4
+E: MINOR=32
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty33
+N: tty33
+E: DEVNAME=/dev/tty33
+E: DEVPATH=/devices/virtual/tty/tty33
+E: MAJOR=4
+E: MINOR=33
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty34
+N: tty34
+E: DEVNAME=/dev/tty34
+E: DEVPATH=/devices/virtual/tty/tty34
+E: MAJOR=4
+E: MINOR=34
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty35
+N: tty35
+E: DEVNAME=/dev/tty35
+E: DEVPATH=/devices/virtual/tty/tty35
+E: MAJOR=4
+E: MINOR=35
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty36
+N: tty36
+E: DEVNAME=/dev/tty36
+E: DEVPATH=/devices/virtual/tty/tty36
+E: MAJOR=4
+E: MINOR=36
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty37
+N: tty37
+E: DEVNAME=/dev/tty37
+E: DEVPATH=/devices/virtual/tty/tty37
+E: MAJOR=4
+E: MINOR=37
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty38
+N: tty38
+E: DEVNAME=/dev/tty38
+E: DEVPATH=/devices/virtual/tty/tty38
+E: MAJOR=4
+E: MINOR=38
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty39
+N: tty39
+E: DEVNAME=/dev/tty39
+E: DEVPATH=/devices/virtual/tty/tty39
+E: MAJOR=4
+E: MINOR=39
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty4
+N: tty4
+E: DEVNAME=/dev/tty4
+E: DEVPATH=/devices/virtual/tty/tty4
+E: MAJOR=4
+E: MINOR=4
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty40
+N: tty40
+E: DEVNAME=/dev/tty40
+E: DEVPATH=/devices/virtual/tty/tty40
+E: MAJOR=4
+E: MINOR=40
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty41
+N: tty41
+E: DEVNAME=/dev/tty41
+E: DEVPATH=/devices/virtual/tty/tty41
+E: MAJOR=4
+E: MINOR=41
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty42
+N: tty42
+E: DEVNAME=/dev/tty42
+E: DEVPATH=/devices/virtual/tty/tty42
+E: MAJOR=4
+E: MINOR=42
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty43
+N: tty43
+E: DEVNAME=/dev/tty43
+E: DEVPATH=/devices/virtual/tty/tty43
+E: MAJOR=4
+E: MINOR=43
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty44
+N: tty44
+E: DEVNAME=/dev/tty44
+E: DEVPATH=/devices/virtual/tty/tty44
+E: MAJOR=4
+E: MINOR=44
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty45
+N: tty45
+E: DEVNAME=/dev/tty45
+E: DEVPATH=/devices/virtual/tty/tty45
+E: MAJOR=4
+E: MINOR=45
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty46
+N: tty46
+E: DEVNAME=/dev/tty46
+E: DEVPATH=/devices/virtual/tty/tty46
+E: MAJOR=4
+E: MINOR=46
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty47
+N: tty47
+E: DEVNAME=/dev/tty47
+E: DEVPATH=/devices/virtual/tty/tty47
+E: MAJOR=4
+E: MINOR=47
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty48
+N: tty48
+E: DEVNAME=/dev/tty48
+E: DEVPATH=/devices/virtual/tty/tty48
+E: MAJOR=4
+E: MINOR=48
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty49
+N: tty49
+E: DEVNAME=/dev/tty49
+E: DEVPATH=/devices/virtual/tty/tty49
+E: MAJOR=4
+E: MINOR=49
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty5
+N: tty5
+E: DEVNAME=/dev/tty5
+E: DEVPATH=/devices/virtual/tty/tty5
+E: MAJOR=4
+E: MINOR=5
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty50
+N: tty50
+E: DEVNAME=/dev/tty50
+E: DEVPATH=/devices/virtual/tty/tty50
+E: MAJOR=4
+E: MINOR=50
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty51
+N: tty51
+E: DEVNAME=/dev/tty51
+E: DEVPATH=/devices/virtual/tty/tty51
+E: MAJOR=4
+E: MINOR=51
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty52
+N: tty52
+E: DEVNAME=/dev/tty52
+E: DEVPATH=/devices/virtual/tty/tty52
+E: MAJOR=4
+E: MINOR=52
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty53
+N: tty53
+E: DEVNAME=/dev/tty53
+E: DEVPATH=/devices/virtual/tty/tty53
+E: MAJOR=4
+E: MINOR=53
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty54
+N: tty54
+E: DEVNAME=/dev/tty54
+E: DEVPATH=/devices/virtual/tty/tty54
+E: MAJOR=4
+E: MINOR=54
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty55
+N: tty55
+E: DEVNAME=/dev/tty55
+E: DEVPATH=/devices/virtual/tty/tty55
+E: MAJOR=4
+E: MINOR=55
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty56
+N: tty56
+E: DEVNAME=/dev/tty56
+E: DEVPATH=/devices/virtual/tty/tty56
+E: MAJOR=4
+E: MINOR=56
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty57
+N: tty57
+E: DEVNAME=/dev/tty57
+E: DEVPATH=/devices/virtual/tty/tty57
+E: MAJOR=4
+E: MINOR=57
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty58
+N: tty58
+E: DEVNAME=/dev/tty58
+E: DEVPATH=/devices/virtual/tty/tty58
+E: MAJOR=4
+E: MINOR=58
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty59
+N: tty59
+E: DEVNAME=/dev/tty59
+E: DEVPATH=/devices/virtual/tty/tty59
+E: MAJOR=4
+E: MINOR=59
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty6
+N: tty6
+E: DEVNAME=/dev/tty6
+E: DEVPATH=/devices/virtual/tty/tty6
+E: MAJOR=4
+E: MINOR=6
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty60
+N: tty60
+E: DEVNAME=/dev/tty60
+E: DEVPATH=/devices/virtual/tty/tty60
+E: MAJOR=4
+E: MINOR=60
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty61
+N: tty61
+E: DEVNAME=/dev/tty61
+E: DEVPATH=/devices/virtual/tty/tty61
+E: MAJOR=4
+E: MINOR=61
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty62
+N: tty62
+E: DEVNAME=/dev/tty62
+E: DEVPATH=/devices/virtual/tty/tty62
+E: MAJOR=4
+E: MINOR=62
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty63
+N: tty63
+E: DEVNAME=/dev/tty63
+E: DEVPATH=/devices/virtual/tty/tty63
+E: MAJOR=4
+E: MINOR=63
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty7
+N: tty7
+E: DEVNAME=/dev/tty7
+E: DEVPATH=/devices/virtual/tty/tty7
+E: MAJOR=4
+E: MINOR=7
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty8
+N: tty8
+E: DEVNAME=/dev/tty8
+E: DEVPATH=/devices/virtual/tty/tty8
+E: MAJOR=4
+E: MINOR=8
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/tty/tty9
+N: tty9
+E: DEVNAME=/dev/tty9
+E: DEVPATH=/devices/virtual/tty/tty9
+E: MAJOR=4
+E: MINOR=9
+E: SUBSYSTEM=tty
+
+P: /devices/virtual/vc/vcs
+N: vcs
+E: DEVNAME=/dev/vcs
+E: DEVPATH=/devices/virtual/vc/vcs
+E: MAJOR=7
+E: MINOR=0
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs1
+N: vcs1
+E: DEVNAME=/dev/vcs1
+E: DEVPATH=/devices/virtual/vc/vcs1
+E: MAJOR=7
+E: MINOR=1
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs2
+N: vcs2
+E: DEVNAME=/dev/vcs2
+E: DEVPATH=/devices/virtual/vc/vcs2
+E: MAJOR=7
+E: MINOR=2
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs3
+N: vcs3
+E: DEVNAME=/dev/vcs3
+E: DEVPATH=/devices/virtual/vc/vcs3
+E: MAJOR=7
+E: MINOR=3
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs4
+N: vcs4
+E: DEVNAME=/dev/vcs4
+E: DEVPATH=/devices/virtual/vc/vcs4
+E: MAJOR=7
+E: MINOR=4
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs5
+N: vcs5
+E: DEVNAME=/dev/vcs5
+E: DEVPATH=/devices/virtual/vc/vcs5
+E: MAJOR=7
+E: MINOR=5
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs6
+N: vcs6
+E: DEVNAME=/dev/vcs6
+E: DEVPATH=/devices/virtual/vc/vcs6
+E: MAJOR=7
+E: MINOR=6
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcs7
+N: vcs7
+E: DEVNAME=/dev/vcs7
+E: DEVPATH=/devices/virtual/vc/vcs7
+E: MAJOR=7
+E: MINOR=7
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa
+N: vcsa
+E: DEVNAME=/dev/vcsa
+E: DEVPATH=/devices/virtual/vc/vcsa
+E: MAJOR=7
+E: MINOR=128
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa1
+N: vcsa1
+E: DEVNAME=/dev/vcsa1
+E: DEVPATH=/devices/virtual/vc/vcsa1
+E: MAJOR=7
+E: MINOR=129
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa2
+N: vcsa2
+E: DEVNAME=/dev/vcsa2
+E: DEVPATH=/devices/virtual/vc/vcsa2
+E: MAJOR=7
+E: MINOR=130
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa3
+N: vcsa3
+E: DEVNAME=/dev/vcsa3
+E: DEVPATH=/devices/virtual/vc/vcsa3
+E: MAJOR=7
+E: MINOR=131
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa4
+N: vcsa4
+E: DEVNAME=/dev/vcsa4
+E: DEVPATH=/devices/virtual/vc/vcsa4
+E: MAJOR=7
+E: MINOR=132
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa5
+N: vcsa5
+E: DEVNAME=/dev/vcsa5
+E: DEVPATH=/devices/virtual/vc/vcsa5
+E: MAJOR=7
+E: MINOR=133
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa6
+N: vcsa6
+E: DEVNAME=/dev/vcsa6
+E: DEVPATH=/devices/virtual/vc/vcsa6
+E: MAJOR=7
+E: MINOR=134
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vc/vcsa7
+N: vcsa7
+E: DEVNAME=/dev/vcsa7
+E: DEVPATH=/devices/virtual/vc/vcsa7
+E: MAJOR=7
+E: MINOR=135
+E: SUBSYSTEM=vc
+
+P: /devices/virtual/vtconsole/vtcon0
+E: DEVPATH=/devices/virtual/vtconsole/vtcon0
+E: SUBSYSTEM=vtconsole
+
+P: /devices/virtual/vtconsole/vtcon1
+E: DEVPATH=/devices/virtual/vtconsole/vtcon1
+E: SUBSYSTEM=vtconsole
+
+P: /devices/virtual/xt_idletimer/timers
+E: DEVPATH=/devices/virtual/xt_idletimer/timers
+E: SUBSYSTEM=xt_idletimer
+
