@@ -67,6 +67,8 @@
 #define GTP_DEBUG_FUNC_ON     0
 #define GTP_DEBUG_INFO_ON     0
 
+#define GTP_REVERT_X 1
+
 //#define GT910_FIRMWARE_CONFIG
 #define GT912_FIRMWARE_CONFIG
 

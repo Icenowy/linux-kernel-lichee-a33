@@ -2857,7 +2857,11 @@ static int ctp_get_system_config(void)
 	twi_id = config_info.twi_id;
 	screen_max_x = config_info.screen_max_x;
 	screen_max_y = config_info.screen_max_y;
+#ifdef GTP_REVERT_X
+	revert_x_flag = GTP_REVERT_X;
+#else
 	revert_x_flag = config_info.revert_x_flag;
+#endif
 	revert_y_flag = config_info.revert_y_flag;
 	exchange_x_y_flag = config_info.exchange_x_y_flag;
 	if((screen_max_x == 0) || (screen_max_y == 0)){
