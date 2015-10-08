@@ -1,14 +1,13 @@
 /*
- * Copyright (C) 2010-2012 ARM Limited. All rights reserved.
- *
+ * Copyright (C) 2010-2013 ARM Limited. All rights reserved.
+ * 
  * This program is free software and is provided to you under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation, and any use by you of this program is subject to the terms of such GNU licence.
- *
+ * 
  * A copy of the licence is included with the program, and can also be obtained from Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 #include "mali_kernel_common.h"
-#include "mali_kernel_core.h"
 #include "mali_kernel_memory_engine.h"
 #include "mali_block_allocator.h"
 #include "mali_osk.h"
@@ -302,7 +301,7 @@ static mali_physical_memory_allocation_result block_allocator_allocate_page_tabl
 
 		phys = get_phys(info, alloc); /* Does not modify info or alloc */
 		size = MALI_BLOCK_SIZE; /* Must be multiple of MALI_MMU_PAGE_SIZE */
-		virt = _mali_osk_mem_mapioregion( phys, size, "Mali block allocator page tables" );
+		virt = _mali_osk_mem_mapioregion( phys + info->cpu_usage_adjust, size, "Mali block allocator page tables" );
 
 		/* Failure of _mali_osk_mem_mapioregion will result in MALI_MEM_ALLOC_INTERNAL_FAILURE,
 		 * because it's unlikely another allocator will be able to map in. */
@@ -319,6 +318,8 @@ static mali_physical_memory_allocation_result block_allocator_allocate_page_tabl
 			info->first_free = alloc->next;
 
 			alloc->next = NULL; /* Could potentially link many blocks together instead */
+
+			_mali_osk_memset(block->mapping, 0, size);
 
 			result = MALI_MEM_ALLOC_FINISHED;
 		}

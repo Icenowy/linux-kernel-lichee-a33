@@ -887,6 +887,16 @@ int dispc_blank(int disp, int blank)
     return 0;
 }
 
+#ifdef CONFIG_FB_SUNXI_UMP
+int (*disp_get_ump_secure_id) (struct fb_info *info, fb_info_t *g_fbi,
+			       unsigned long arg, int buf);
+EXPORT_SYMBOL(disp_get_ump_secure_id);
+#endif
+
+#define GET_UMP_SECURE_ID_BUF1   _IOWR('m', 310, unsigned int)                            
+#define GET_UMP_SECURE_ID_BUF2   _IOWR('m', 311, unsigned int)    
+#define GET_UMP_SECURE_ID_SUNXI_FB _IOWR('s', 100, unsigned int)
+
 static int Fb_ioctl(struct fb_info *info, unsigned int cmd,unsigned long arg)
 {
 	long ret = 0;
@@ -911,6 +921,21 @@ static int Fb_ioctl(struct fb_info *info, unsigned int cmd,unsigned long arg)
 			ret = -1;
 		}
 		break;
+	case GET_UMP_SECURE_ID_BUF2:	/* flow trough */
+		secure_id_buf_num++;
+	case GET_UMP_SECURE_ID_BUF1:	/* flow trough */
+		secure_id_buf_num++;
+	case GET_UMP_SECURE_ID_SUNXI_FB:
+		{
+			if (!disp_get_ump_secure_id)
+				request_module("disp_ump");
+			if (disp_get_ump_secure_id)
+				return disp_get_ump_secure_id(info, &g_fbi, arg,
+							      secure_id_buf_num);
+			else
+				return -ENOTSUPP;
+		}
+
 #if 0
 	case FBIOGET_VBLANK:
 	{

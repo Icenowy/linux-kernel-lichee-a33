@@ -1,17 +1,14 @@
 /*
- * Copyright (C) 2010-2012 ARM Limited. All rights reserved.
- *
+ * Copyright (C) 2010-2013 ARM Limited. All rights reserved.
+ * 
  * This program is free software and is provided to you under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation, and any use by you of this program is subject to the terms of such GNU licence.
- *
+ * 
  * A copy of the licence is included with the program, and can also be obtained from Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <asm/memory.h>  /* For PHYS_OFFSET */
-
 #include "mali_kernel_common.h"
-#include "mali_kernel_core.h"
 #include "mali_kernel_memory_engine.h"
 #include "mali_osk.h"
 #include "mali_osk_list.h"
@@ -223,23 +220,6 @@ _mali_osk_errcode_t mali_allocation_engine_map_physical(mali_allocation_engine m
 	MALI_DEBUG_ASSERT_POINTER(engine);
 	MALI_DEBUG_ASSERT_POINTER(descriptor);
 
-	/*
-	 * Hack: Override the 'cpu_usage_adjust' function argument, because we
-	 *       know that it should be equal to PHYS_OFFSET. Also if 'phys'
-	 *       is not MALI_MEMORY_ALLOCATION_OS_ALLOCATED_PHYSADDR_MAGIC
-	 *       (OS allocated memory), then convert it to the bus address
-	 *       right here (this should handle both UMP buffers and external
-	 *       memory).
-	 *
-	 * Note: Apparently mali driver uses a bit different terminology, which
-	 *       may be a source of confusion:
-	 *           linux       : "physical address"     and "bus address"
-	 *           mali driver : "cpu physical address" and "physical address"
-	 */
-	cpu_usage_adjust = PHYS_OFFSET;
-	if (MALI_MEMORY_ALLOCATION_OS_ALLOCATED_PHYSADDR_MAGIC != phys)
-		phys -= cpu_usage_adjust;
-
 	MALI_DEBUG_PRINT(7, ("Mapping phys 0x%08X length 0x%08X at offset 0x%08X\n", phys, size, offset));
 
 	MALI_DEBUG_ASSERT_POINTER(engine->mali_address);
@@ -271,6 +251,7 @@ _mali_osk_errcode_t mali_allocation_engine_map_physical(mali_allocation_engine m
 
 		if ( _MALI_OSK_ERR_OK != err )
 		{
+			MALI_DEBUG_PRINT(2, ("Map failed: %s %d\n", __FUNCTION__, __LINE__));
 			MALI_ERROR( err );
 		}
 	}
@@ -290,7 +271,7 @@ _mali_osk_errcode_t mali_allocation_engine_map_physical(mali_allocation_engine m
 			MALI_DEBUG_PRINT( 2, ("Process address manager succeeded, but Mali Address manager failed for phys=0x%08X size=0x%08X, offset=0x%08X. Will unmap.\n", phys, size, offset));
 			engine->process_address->unmap_physical(descriptor, offset, size, unmap_flags);
 		}
-
+		MALI_DEBUG_PRINT(2, ("Map mali failed: %s %d\n", __FUNCTION__, __LINE__));
 		MALI_ERROR( err );
 	}
 

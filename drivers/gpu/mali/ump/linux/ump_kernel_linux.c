@@ -1,9 +1,9 @@
 /*
- * Copyright (C) 2010-2012 ARM Limited. All rights reserved.
- *
+ * Copyright (C) 2010-2013 ARM Limited. All rights reserved.
+ * 
  * This program is free software and is provided to you under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation, and any use by you of this program is subject to the terms of such GNU licence.
- *
+ * 
  * A copy of the licence is included with the program, and can also be obtained from Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
@@ -17,8 +17,9 @@
 #include <asm/atomic.h>
 #include <linux/device.h>
 #include <linux/debugfs.h>
+#include <linux/major.h>
 
-#include "config.h"             /* Configuration for current platform. The symlinc for arch is set by Makefile */
+#include "arch/config.h"             /* Configuration for current platform. The symlinc for arch is set by Makefile */
 #include "ump_ioctl.h"
 #include "ump_kernel_common.h"
 #include "ump_kernel_interface.h"
@@ -42,7 +43,7 @@ module_param(ump_debug_level, int, S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IRO
 MODULE_PARM_DESC(ump_debug_level, "Higher number, more dmesg output");
 
 /* By default the module uses any available major, but it's possible to set it at load time to a specific number */
-int ump_major = 0;
+int ump_major = UMP_MAJOR;
 module_param(ump_major, int, S_IRUGO); /* r--r--r-- */
 MODULE_PARM_DESC(ump_major, "Device major number");
 

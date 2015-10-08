@@ -1,15 +1,14 @@
 /*
- * Copyright (C) 2010-2012 ARM Limited. All rights reserved.
- *
+ * Copyright (C) 2010-2013 ARM Limited. All rights reserved.
+ * 
  * This program is free software and is provided to you under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation, and any use by you of this program is subject to the terms of such GNU licence.
- *
+ * 
  * A copy of the licence is included with the program, and can also be obtained from Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 #include <linux/fs.h>       /* file system operations */
 #include <asm/uaccess.h>    /* user space access */
-//#include <plat/memory.h>
 
 #include "mali_ukk.h"
 #include "mali_osk.h"
@@ -66,6 +65,49 @@ int mem_term_wrapper(struct mali_session_data *session_data, _mali_uk_term_mem_s
     return 0;
 }
 
+int mem_write_safe_wrapper(struct mali_session_data *session_data, _mali_uk_mem_write_safe_s __user * uargs)
+{
+	_mali_uk_mem_write_safe_s kargs;
+	_mali_osk_errcode_t err;
+
+	MALI_CHECK_NON_NULL(uargs, -EINVAL);
+	MALI_CHECK_NON_NULL(session_data, -EINVAL);
+
+	if (0 != copy_from_user(&kargs, uargs, sizeof(_mali_uk_mem_write_safe_s)))
+	{
+		return -EFAULT;
+	}
+
+	kargs.ctx = session_data;
+
+	/* Check if we can access the buffers */
+	if (!access_ok(VERIFY_WRITE, kargs.dest, kargs.size)
+	    || !access_ok(VERIFY_READ, kargs.src, kargs.size))
+	{
+		return -EINVAL;
+	}
+
+	/* Check if size wraps */
+	if ((kargs.size + kargs.dest) <= kargs.dest
+	    || (kargs.size + kargs.src) <= kargs.src)
+	{
+		return -EINVAL;
+	}
+
+	err = _mali_ukk_mem_write_safe(&kargs);
+	if (_MALI_OSK_ERR_OK != err)
+	{
+		return map_errcode(err);
+	}
+
+	if (0 != put_user(kargs.size, &uargs->size))
+	{
+		return -EFAULT;
+	}
+
+	return 0;
+}
+
 int mem_map_ext_wrapper(struct mali_session_data *session_data, _mali_uk_map_external_mem_s __user * argument)
 {
 	_mali_uk_map_external_mem_s uk_args;
@@ -81,12 +123,11 @@ int mem_map_ext_wrapper(struct mali_session_data *session_data, _mali_uk_map_ext
 		return -EFAULT;
 	}
 
-	uk_args.ctx = session_data;
-
+    uk_args.ctx = session_data;
 	err_code = _mali_ukk_map_external_mem( &uk_args );
 
-	if (0 != put_user(uk_args.cookie, &argument->cookie))
-	{
+    if (0 != put_user(uk_args.cookie, &argument->cookie))
+    {
         if (_MALI_OSK_ERR_OK == err_code)
         {
             /* Rollback */
@@ -129,7 +170,7 @@ int mem_unmap_ext_wrapper(struct mali_session_data *session_data, _mali_uk_unmap
 	return map_errcode(err_code);
 }
 
-#if MALI_USE_UNIFIED_MEMORY_PROVIDER != 0
+#if defined(CONFIG_MALI400_UMP)
 int mem_release_ump_wrapper(struct mali_session_data *session_data, _mali_uk_release_ump_mem_s __user * argument)
 {
 	_mali_uk_release_ump_mem_s uk_args;
@@ -191,7 +232,7 @@ int mem_attach_ump_wrapper(struct mali_session_data *session_data, _mali_uk_atta
     /* Return the error that _mali_ukk_map_external_ump_mem produced */
 	return map_errcode(err_code);
 }
-#endif /* MALI_USE_UNIFIED_MEMORY_PROVIDER */
+#endif /* CONFIG_MALI400_UMP */
 
 int mem_query_mmu_page_table_dump_size_wrapper(struct mali_session_data *session_data, _mali_uk_query_mmu_page_table_dump_size_s __user * uargs)
 {
@@ -232,6 +273,7 @@ int mem_dump_mmu_page_table_wrapper(struct mali_session_data *session_data, _mal
     if (!access_ok(VERIFY_WRITE, buffer, kargs.size)) goto err_exit;
 
     /* allocate temporary buffer (kernel side) to store mmu page table info */
+    MALI_CHECK(kargs.size > 0, -ENOMEM);
     kargs.buffer = _mali_osk_valloc(kargs.size);
     if (NULL == kargs.buffer)
     {

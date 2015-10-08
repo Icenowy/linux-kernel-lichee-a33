@@ -63,7 +63,7 @@ config LCD_DISP2_SUNXI
 
 config FB_SUNXI_UMP
   bool "Enable FB/UMP Integration"
-  depends on MALI && FB_SUNXI
-  default y
+  depends on FB_SUNXI
+  default m
 
 endmenu

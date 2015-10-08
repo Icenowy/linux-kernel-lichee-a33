@@ -1,9 +1,9 @@
 /*
- * Copyright (C) 2010 ARM Limited. All rights reserved.
- *
+ * Copyright (C) 2010, 2013 ARM Limited. All rights reserved.
+ * 
  * This program is free software and is provided to you under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation, and any use by you of this program is subject to the terms of such GNU licence.
- *
+ * 
  * A copy of the licence is included with the program, and can also be obtained from Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
@@ -11,7 +11,7 @@
 #include <linux/module.h>            /* kernel module definitions */
 #include <linux/ioport.h>            /* request_mem_region */
 
-#include "config.h"             /* Configuration for current platform. The symlink for arch is set by Makefile */
+#include "arch/config.h"             /* Configuration for current platform. The symlink for arch is set by Makefile */
 
 #include "ump_osk.h"
 #include "ump_kernel_common.h"
