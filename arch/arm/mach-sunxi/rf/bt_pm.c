@@ -23,6 +23,7 @@ static int rfkill_set_power(void *data, bool blocked)
 {
     unsigned int mod_sel = wifi_pm_get_mod_type();
 
+    if(blocked)blocked = false;
     RF_MSG("rfkill set power %d\n", blocked);
 
     switch (mod_sel)
@@ -31,28 +32,28 @@ static int rfkill_set_power(void *data, bool blocked)
             if (!blocked) {
                 wifi_pm_gpio_ctrl("ap6xxx_bt_regon", 1);
             } else {
-                wifi_pm_gpio_ctrl("ap6xxx_bt_regon", 0);
+                wifi_pm_gpio_ctrl("ap6xxx_bt_regon", 1);
             }
             break;
         case 4: /* realtek rtl8723au */
             if (!blocked) {
                 wifi_pm_gpio_ctrl("rtl8723au_bt", 1);
             } else {
-                wifi_pm_gpio_ctrl("rtl8723au_bt", 0);
+                wifi_pm_gpio_ctrl("rtl8723au_bt", 1);
             }
             break;
         case 5: /* realtek rtl8723bs */
             if (!blocked) {
                 wifi_pm_gpio_ctrl("rtl8723bs_bt_regon", 1);
             } else {
-                wifi_pm_gpio_ctrl("rtl8723bs_bt_regon", 0);
+                wifi_pm_gpio_ctrl("rtl8723bs_bt_regon", 1);
             }
             break;
         case 7: /* ap6476 */ 
             if (!blocked) {
                 wifi_pm_gpio_ctrl("ap6xxx_bt_regon", 1);
             } else {
-                wifi_pm_gpio_ctrl("ap6xxx_bt_regon", 0);
+                wifi_pm_gpio_ctrl("ap6xxx_bt_regon", 1);
             }
             break;
         default:
