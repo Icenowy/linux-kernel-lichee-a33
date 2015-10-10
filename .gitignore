@@ -68,6 +68,11 @@ Module.symvers
 !.mailmap
 
 #
+# as a device repo .config is tracked
+#
+!.config
+
+#
 # Generated include files
 #
 include/config
