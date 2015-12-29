@@ -40,8 +40,8 @@ static void __exit esp_sdio_exit(void);
 
 #define ESP_DMA_IBUFSZ   2048
 
-//unsigned int esp_msg_level = 0;
-unsigned int esp_msg_level = ESP_DBG_ALL;
+unsigned int esp_msg_level = 0;
+//unsigned int esp_msg_level = ESP_DBG_ALL;
 
 static struct semaphore esp_powerup_sem;
 
