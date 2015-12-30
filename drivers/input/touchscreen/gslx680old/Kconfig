@@ -6,5 +6,5 @@ config  TOUCHSCREEN_GSLX680
        depends on INPUT && I2C
        default m
        help
-         gsl168X,gsl268X,gsl368X touchscreen new driver,optimize anti-shake    
+         gsl1680,gsl2680,gsl3680 touchscreen driver    
          

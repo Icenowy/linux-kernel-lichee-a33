@@ -1015,7 +1015,7 @@ static void report_data(struct gsl_ts *ts, u16 x, u16 y, u8 pressure, u8 id)
 	}
 
 	tmpx = x;
-	tmpx = tmpx * 800 / 750;
+	tmpx = tmpx * 800 / 745;
 	x = (u16) tmpx;
 
 	dprintk(DEBUG_X_Y_INFO,"report data:ID:%d, X:%d, Y:%d, W:%d\n", id, x, y, pressure);

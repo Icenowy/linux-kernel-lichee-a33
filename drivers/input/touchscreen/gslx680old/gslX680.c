@@ -794,6 +794,8 @@ static void process_gslX680_data(struct gsl_ts *ts)
 	u16 x, y;
 	int i = 0;
 
+	dprintk(DEBUG_X_Y_INFO, "Entered process_gslX680_data\n");
+
 	touches = ts->touch_data[ts->dd->touch_index];
 	for(i=1;i<=MAX_CONTACTS;i++){
 		if(touches == 0)
@@ -807,7 +809,9 @@ static void process_gslX680_data(struct gsl_ts *ts)
 				ts->touch_data[ts->dd->y_index + 4 * i ]);
 		id = ts->touch_data[ts->dd->id_index + 4 * i] >> 4;
 
-		if(1 <=id && id <= MAX_CONTACTS){
+		dprintk(DEBUG_X_Y_INFO, "in process_gslX680_data, x:%d, y:%d, id:%d\n",x,y,id);
+
+		if(0 <=id && id <= MAX_CONTACTS){
 			if (4 == fw_index)
 			{
 				adjust_edge(&x);
@@ -1281,7 +1285,7 @@ static int ctp_get_system_config(void)
 	screen_max_y = config_info.screen_max_y;
 	revert_x_flag = config_info.revert_x_flag;
 	revert_y_flag = config_info.revert_y_flag;
-	exchange_x_y_flag = config_info.exchange_x_y_flag;
+	exchange_x_y_flag = 1;
 	if((screen_max_x == 0) || (screen_max_y == 0)){
 		printk("%s:read config error!\n",__func__);
 		return 0;
