@@ -545,6 +545,7 @@ static enum power_supply_property axp_battery_props[] = {
 	POWER_SUPPLY_PROP_VOLTAGE_MIN_DESIGN,
 	POWER_SUPPLY_PROP_VOLTAGE_NOW,
 	POWER_SUPPLY_PROP_CURRENT_NOW,
+	POWER_SUPPLY_PROP_POWER_NOW,
 	//POWER_SUPPLY_PROP_CHARGE_FULL_DESIGN,
 	//POWER_SUPPLY_PROP_CHARGE_FULL,
 	POWER_SUPPLY_PROP_ENERGY_FULL_DESIGN,
@@ -633,6 +634,9 @@ static int axp_battery_get_property(struct power_supply *psy,
 		break;
 	case POWER_SUPPLY_PROP_CURRENT_NOW:
 		val->intval = charger->ibat * 1000;
+		break;
+	case POWER_SUPPLY_PROP_POWER_NOW:
+		val->intval = charger->ibat;
 		break;
 	case POWER_SUPPLY_PROP_MODEL_NAME:
 		val->strval = charger->batt.name;
