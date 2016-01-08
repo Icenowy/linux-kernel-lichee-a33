@@ -1641,8 +1641,9 @@ static int sndpcm_perpare(struct snd_pcm_substream *substream,
 			printk("AUDIO SAMPLE IS WRONG:There is no suitable sampling rate!!!\n");
 			break;
 		}
+	printk("%s sample ok,line:%d\n",__func__,__LINE__);
 	if (substream->stream == SNDRV_PCM_STREAM_PLAYBACK) {
-		if (runtime->status->state == SNDRV_PCM_STATE_XRUN) {
+//		if (runtime->status->state == SNDRV_PCM_STATE_XRUN) {
 			if (!(codec_analog_mainmic_en || codec_analog_headsetmic_en ||codec_digital_headsetmic_en ||
 					codec_digital_mainmic_en ||codec_analog_btmic_en || codec_digital_btmic_en)){
 				printk("%s,-------playback: SNDRV_PCM_STATE_XRUN---------line:%d\n",__func__,__LINE__);
@@ -1659,7 +1660,7 @@ static int sndpcm_perpare(struct snd_pcm_substream *substream,
 				}
 				play_running = 1;
 			}
-		}
+//		}
 		//play_running = 1;
 		return play_ret;
 	} else {
