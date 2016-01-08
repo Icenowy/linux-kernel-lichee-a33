@@ -34,15 +34,15 @@ static const struct snd_pcm_hardware sunxi_pcm_play_hardware = {
 	.info			= SNDRV_PCM_INFO_INTERLEAVED | SNDRV_PCM_INFO_BLOCK_TRANSFER |
 				      SNDRV_PCM_INFO_MMAP | SNDRV_PCM_INFO_MMAP_VALID |
 				      SNDRV_PCM_INFO_PAUSE | SNDRV_PCM_INFO_RESUME,
-	.formats		= SNDRV_PCM_FMTBIT_S16_LE | SNDRV_PCM_FMTBIT_S20_3LE | SNDRV_PCM_FMTBIT_S24_LE,
+	.formats		= SNDRV_PCM_FMTBIT_S16_LE | SNDRV_PCM_FMTBIT_S20_3LE | SNDRV_PCM_FMTBIT_S24_LE | SNDRV_PCM_FMTBIT_S32_LE,
 	.rates			= SNDRV_PCM_RATE_8000_192000 | SNDRV_PCM_RATE_KNOT,
 	.rate_min		= 8000,
 	.rate_max		= 192000,
 	.channels_min		= 1,
 	.channels_max		= 2,
-	.buffer_bytes_max	= 128*1024,    /* value must be (2^n)Kbyte size */
+	.buffer_bytes_max	= 1024*1024,    /* value must be (2^n)Kbyte size */
 	.period_bytes_min	= 256,
-	.period_bytes_max	= 1024*16,
+	.period_bytes_max	= 1024*128,
 	.periods_min		= 2,
 	.periods_max		= 8,
 	.fifo_size		= 128,
@@ -58,9 +58,9 @@ static const struct snd_pcm_hardware sunxi_pcm_capture_hardware = {
 	.rate_max		= 192000,
 	.channels_min		= 1,
 	.channels_max		= 2,
-	.buffer_bytes_max	= 128*1024,    /* value must be (2^n)Kbyte size */
+	.buffer_bytes_max	= 1024*1024,    /* value must be (2^n)Kbyte size */
 	.period_bytes_min	= 256,
-	.period_bytes_max	= 1024*16,
+	.period_bytes_max	= 1024*128,
 	.periods_min		= 2,
 	.periods_max		= 8,
 	.fifo_size		= 128,
@@ -85,8 +85,13 @@ static int sunxi_pcm_hw_params(struct snd_pcm_substream *substream,
 		return ret;
 	}
 	if (substream->stream == SNDRV_PCM_STREAM_PLAYBACK) {
-		slave_config.src_addr_width = DMA_SLAVE_BUSWIDTH_2_BYTES;
-		slave_config.dst_addr_width = DMA_SLAVE_BUSWIDTH_2_BYTES;
+		if (SNDRV_PCM_FORMAT_S16_LE == params_format(params)) {
+			slave_config.src_addr_width = DMA_SLAVE_BUSWIDTH_2_BYTES;
+			slave_config.dst_addr_width = DMA_SLAVE_BUSWIDTH_2_BYTES;
+		} else {
+			slave_config.src_addr_width = DMA_SLAVE_BUSWIDTH_4_BYTES;
+			slave_config.dst_addr_width = DMA_SLAVE_BUSWIDTH_4_BYTES;
+		}
 		slave_config.dst_addr = dmap->dma_addr;
 		slave_config.src_maxburst = 4;
 		slave_config.dst_maxburst = 4;
@@ -105,25 +110,6 @@ static int sunxi_pcm_hw_params(struct snd_pcm_substream *substream,
 		dev_err(dev, "dma slave config failed with err %d\n", ret);
 		return ret;
 	}
-
-#if defined USED_SRAM_ADDR
-/*for a23*/
-#if defined CONFIG_ARCH_SUN8IW3
-	if (substream->stream == SNDRV_PCM_STREAM_PLAYBACK) {
-		substream->dma_buffer.addr = 0x00002000;
-		substream->dma_buffer.area = 0xf0002000;
-		memset(0xf0002000, 0, 0x4000-0x00002000);
-	}
-#endif
-#endif
-/*for a33*/
-#if defined CONFIG_ARCH_SUN8IW5
-	if (substream->stream == SNDRV_PCM_STREAM_PLAYBACK) {
-		substream->dma_buffer.addr = 0x00002400;//0x00002000;
-		substream->dma_buffer.area = (unsigned char *)0xf0002400;//0xf0002000;  1580 ok
-		memset((void *)0xf0002400, 0, 0x6400-0x00002400);
-	}
-#endif
 
 	snd_pcm_set_runtime_buffer(substream, &substream->dma_buffer);
 	return 0;
@@ -204,25 +190,17 @@ static int sunxi_pcm_close(struct snd_pcm_substream *substream)
 static int sunxi_pcm_mmap(struct snd_pcm_substream *substream,
 	struct vm_area_struct *vma)
 {
-	struct snd_pcm_runtime *play_runtime = NULL;
-	struct snd_pcm_runtime *capture_runtime = NULL;
+	struct snd_pcm_runtime *runtime = NULL;
+	if (substream->runtime!=NULL) {
+		runtime = substream->runtime;
 
-	if (substream->stream == SNDRV_PCM_STREAM_PLAYBACK) {
-		play_runtime = substream->runtime;
-		
 		return dma_mmap_writecombine(substream->pcm->card->dev, vma,
-					     play_runtime->dma_area,
-					     play_runtime->dma_addr,
-					     play_runtime->dma_bytes);
+					     runtime->dma_area,
+					     runtime->dma_addr,
+					     runtime->dma_bytes);
 	} else {
-		capture_runtime = substream->runtime;
-		
-		return dma_mmap_writecombine(substream->pcm->card->dev, vma,
-					     play_runtime->dma_area,
-					     play_runtime->dma_addr,
-					     play_runtime->dma_bytes);
+		return -1;
 	}
-
 }
 
 static struct snd_pcm_ops sunxi_pcm_ops = {
